@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body id="All">
+        <header>
+          <h1 id="title">2020 Tourism</h1>
+      
+          <p id="description">because we all need some time to rest, and try to recover from this so bad year</p>
+        </header>
+        <div id="form-container" class="form_container">
+          <form novalidate id="survey-form">
+            <div class="form-section" id="namediv">
+              <label id="name-label" for="name">Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+              </label>
+            </div>
+            <div class="form-section" id="emaildiv">
+              <label id="email-label" for="email">Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </label>
+            </div>
+            <div class="form-section" id="agediv">
+              <label id="number-label" for="number">Age (opcional)
+                <input id="number" type="number" placeholder="Age" min="7" max="99">
+              </label>
+            </div>
+            <div class="form-section" id="origen">
+              <label for="origin-label">Where are you from?
+                <input id="origin-label" type="text" placeholder="Enter your 
+      country of origin" required>
+              </label>
+            </div>
+            <div class="form-section" id="actual-situaciondiv">
+              <label for="situacion">What is your actual situacion?</label>
+              <select id="dropdown" name="situaciones" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="student">Student</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">retired</option>
+                <option calue="other">Other</option>
+              </select>
+            </div>
+            <div class="form-section" id="where-yo_wantgodiv">
+              <p>Where would you like to go?</p>
+              <div id="doyougo">
+              <label for="asia">
+                <input type="radio" value="asia" name="continents">Asia</label>
+              <label for="europe">
+                <input type="radio" value="europe" name="continents">Europe</label>
+              <label for="northamerica">
+                <input type="radio" value="northamerica" name="continents">North America</label>
+              <label for="southamerica">
+                <input type="radio" value="southamerica" name="continents">South America</label>
+              <label for="oceania">
+                <input type="radio" value="oceania" name="continents">Oceania</label>
+              <label for="africa">
+                <input type="radio" value="africa" name="continents">Africa</label>
+            </div>
+      
+            </div>
+            <div class="form-section" id="checkboxesdiv">
+              <p>Activities you might would like to do in your vacation</p>
+              <section id="grid-box">
+                <div>
+                  <label for="trekking">Trekking
+                    <input value="trekking" type="checkbox" class="input-checkbox">
+                  </label>
+                </div>
+                <div>
+                  <label for="hiking">Hiking
+                    <input value="hiking" type="checkbox" class="input-checkbox">
+                  </label>
+                </div>
+                <div>
+                  <label for="visit">
+                    Visit emblematic places
+                    <input value="visit" type="checkbox" class="input-checkbox">
+                  </label>
+                </div>
+                <div>
+                  <label for="hotels">Luxury hotels
+                    <input value="hotels" type="checkbox" class="input-checkbox">
+                  </label>
+                </div>
+                <div>
+                  <label for="museums">Visit museums<input value="museums" type="checkbox" class="input-checkbox"></label>
+                </div>
+                <div>
+                  <label for="other">Other
+                    <input value="other" type="checkbox" class="input-checkbox">
+                  </label>
+                </div>
+              </section>
+            </div>
+            <div class="form-section" id="texareadiv">
+              <p>please leave any requirement below and our team will comunicate with you</p>
+              <textarea id="input-texarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-section" id="sumbmitdiv">
+              <button id="submit" onclick><input id="submitbutton" type="submit"> </button>
+            </div>
+          </form>
+        </div>
+      </body>
+</body>
+</html>
